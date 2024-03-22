@@ -1,0 +1,22 @@
+strict mode is a tool for highlighting the potential problems in our application, it activates additional checks 
+and warnings for its descendants
+It only runs in the development, it will not going to affect the production build
+In development it renders twice
+
+app.css is not only going to stick to app.js 
+The css file is not scoped by default to a certain component
+
+Pretty much for every functionality I set it up in a different component in a different file
+
+generally for the root component we create a new file and i.e App.js and we import this file in the index.js
+
+<a href="#about" className="nav-link">
+It will create a link, and if I click on this link it will take me to the element which is having the id about
+
+We will host our project on netlify with some extra benefits
+
+so firstly we need to remvove the existing git repository
+rmdir -Force -Recurse .git
+
+git init creates a empty git repository
+git . adds the entire project
