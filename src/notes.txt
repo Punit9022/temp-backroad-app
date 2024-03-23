@@ -30,5 +30,14 @@ our project
 
 netlify treats warnings as errors
 
+"build": "CI=react-scripts build",
+now on netlify it will perfectly alright but now if I try to run the command npm run build tab ye kam nhi karega
+so simply to solve this problem add one more line
+"local-build": "react-scripts build"
+
+now when we need to run locally we will use the npm run local-build 
+and when we need to deploy on netlify we will use the command npm run build
+
+
 now we will be using vite to develop our react projects
 In all the dev environments react code is same but the folders and the commands are different
