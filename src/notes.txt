@@ -19,4 +19,16 @@ so firstly we need to remvove the existing git repository
 rmdir -Force -Recurse .git
 
 git init creates a empty git repository
-git . adds the entire project
+git add . adds the entire project on the github repository
+git commit -m "first commit" => a shortcut command that immediately creates a commit with a passed commit message
+
+benefits of continous deployments:-
+- don't need to keep project locally
+- automatic builds
+whenever we do some changes in our project and push it on github than netlify will automatically rebuild
+our project
+
+netlify treats warnings as errors
+
+now we will be using vite to develop our react projects
+In all the dev environments react code is same but the folders and the commands are different
